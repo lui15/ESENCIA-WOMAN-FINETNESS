@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esencia Women Fitness · Arganzuela, Madrid</title>
+    <meta
+      name="description"
+      content="Esencia Women Fitness: gimnasio exclusivo para mujeres en Arganzuela, Madrid. Tu espacio. Tu fuerza. Tu bienestar."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- PANTALLA DE CARGA -->
+    <div class="loader" id="loader">
+      <div class="loader__inner">
+        <span class="loader__word">ESENCIA</span>
+        <span class="loader__line"></span>
+        <span class="loader__sub">Women Fitness</span>
+      </div>
+    </div>
+
+    <!-- BARRA DE PROGRESO DE SCROLL -->
+    <div class="progress" id="progress"></div>
+
+    <!-- CURSOR PERSONALIZADO -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- NAVEGACIÓN -->
+    <header class="nav" id="nav">
+      <a href="#inicio" class="nav__logo">
+        <span class="nav__logo-main">ESENCIA</span>
+        <span class="nav__logo-sub">Women Fitness</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#nosotras">Nosotras</a>
+        <a href="#clases">Clases</a>
+        <a href="#calculadora">Peso ideal</a>
+        <a href="#tarifas">Tarifas</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto" class="btn btn--small">Prueba gratis</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="inicio">
+        <div class="hero__blob hero__blob--1" data-parallax="0.15"></div>
+        <div class="hero__blob hero__blob--2" data-parallax="-0.1"></div>
+        <div class="hero__blob hero__blob--3" data-parallax="0.25"></div>
+
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal">
+            Gimnasio exclusivo para mujeres · Arganzuela, Madrid
+          </p>
+          <h1 class="hero__title">
+            <span class="split" data-split>ESENCIA</span>
+          </h1>
+          <div class="hero__subtitle reveal">
+            <span class="hero__rule"></span>
+            <span>WOMEN FITNESS</span>
+            <span class="hero__rule"></span>
+          </div>
+          <svg
+            class="hero__dumbbell reveal"
+            viewBox="0 0 120 30"
+            aria-hidden="true"
+          >
+            <rect x="2" y="8" width="8" height="14" rx="2" />
+            <rect x="12" y="3" width="10" height="24" rx="2" />
+            <rect x="22" y="13" width="76" height="4" rx="2" />
+            <rect x="98" y="3" width="10" height="24" rx="2" />
+            <rect x="110" y="8" width="8" height="14" rx="2" />
+          </svg>
+          <p class="hero__tagline reveal">
+            Tu espacio. Tu fuerza. Tu bienestar.
+          </p>
+          <div class="hero__ctas reveal">
+            <a href="#contacto" class="btn btn--primary magnetic"
+              >Reserva tu clase de prueba</a
+            >
+            <a href="#calculadora" class="btn btn--ghost magnetic"
+              >Calcula tu peso ideal</a
+            >
+          </div>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat reveal">
+            <span class="stat__num" data-count="100" data-suffix="%">0</span>
+            <span class="stat__label">Para mujeres</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num" data-count="15" data-suffix="h">0</span>
+            <span class="stat__label">Abierto al día</span>
+          </div>
+          <div class="stat reveal">
+            <span
+              class="stat__num"
+              data-count="35"
+              data-prefix="desde "
+              data-suffix="€"
+              >0</span
+            >
+            <span class="stat__label">Al mes</span>
+          </div>
+        </div>
+
+        <a href="#nosotras" class="hero__scroll" aria-label="Bajar">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- MARQUESINA -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Salud física</span><i>♡</i> <span>Bienestar emocional</span
+          ><i>♡</i> <span>Confianza y autoestima</span><i>♡</i>
+          <span>Fuerza</span><i>♡</i> <span>Comunidad</span><i>♡</i>
+          <span>Salud física</span><i>♡</i> <span>Bienestar emocional</span
+          ><i>♡</i> <span>Confianza y autoestima</span><i>♡</i>
+          <span>Fuerza</span><i>♡</i> <span>Comunidad</span><i>♡</i>
+        </div>
+      </div>
+
+      <!-- NOSOTRAS / LA IDEA -->
+      <section class="section about" id="nosotras">
+        <div class="container about__grid">
+          <div class="about__text">
+            <p class="eyebrow reveal">Nuestra idea</p>
+            <h2 class="title reveal">
+              Un espacio donde ninguna mujer se sienta <em>juzgada</em>.
+            </h2>
+            <p class="reveal">
+              Muchas mujeres se sienten incómodas en algunos gimnasios, sobre
+              todo cuando están empezando, no saben cómo funcionan las máquinas
+              o notan presión por su aspecto físico.
+            </p>
+            <p class="reveal">
+              En <strong>Esencia Women Fitness</strong> juntamos sala de
+              musculación y cardio, clases dirigidas, programas de iniciación y
+              acompañamiento profesional en un ambiente
+              <strong>respetuoso, cercano y motivador</strong>.
+            </p>
+            <ul class="pillars">
+              <li class="reveal"><span>01</span>Salud física</li>
+              <li class="reveal"><span>02</span>Bienestar emocional</li>
+              <li class="reveal"><span>03</span>Confianza y autoestima</li>
+            </ul>
+          </div>
+          <div class="about__visual reveal">
+            <div class="arch">
+              <div class="arch__inner">
+                <span class="arch__big">EWF</span>
+                <span class="arch__small">Arganzuela · Madrid</span>
+              </div>
+            </div>
+            <div class="floating-card floating-card--a">
+              <strong>Programa de bienvenida</strong>
+              <span>Te enseñamos a usar cada máquina</span>
+            </div>
+            <div class="floating-card floating-card--b">
+              <strong>♡ Atención personalizada</strong>
+              <span>Sobre todo si estás empezando</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIFERENCIAS -->
+      <section class="section diff">
+        <div class="container">
+          <p class="eyebrow eyebrow--light reveal">
+            Lo que nos hace diferentes
+          </p>
+          <h2 class="title title--light reveal">
+            Entrenar con <em>confianza</em> lo cambia todo
+          </h2>
+          <div class="diff__grid">
+            <article class="diff-card tilt reveal">
+              <span class="diff-card__icon">✦</span>
+              <h3>Programa de bienvenida</h3>
+              <p>
+                Te explicamos cómo funcionan las máquinas para que empieces
+                segura desde el primer día.
+              </p>
+            </article>
+            <article class="diff-card tilt reveal">
+              <span class="diff-card__icon">◐</span>
+              <h3>Clases para cada nivel</h3>
+              <p>
+                Fuerza, movilidad, pilates y entrenamiento funcional, adaptados
+                a tu nivel.
+              </p>
+            </article>
+            <article class="diff-card tilt reveal">
+              <span class="diff-card__icon">♡</span>
+              <h3>Atención personalizada</h3>
+              <p>
+                Profesionales que te acompañan, sobre todo si estás empezando.
+              </p>
+            </article>
+            <article class="diff-card tilt reveal">
+              <span class="diff-card__icon">❋</span>
+              <h3>Comunidad de socias</h3>
+              <p>Retos, talleres y actividades para motivarnos entre todas.</p>
+            </article>
+            <article class="diff-card tilt reveal">
+              <span class="diff-card__icon">☼</span>
+              <h3>Salud, no estereotipos</h3>
+              <p>
+                Hablamos de progreso y bienestar, nunca de cuerpos “perfectos”.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLASES -->
+      <section class="section classes" id="clases">
+        <div class="container">
+          <p class="eyebrow reveal">Actividades</p>
+          <h2 class="title reveal">Nuestras <em>clases</em></h2>
+          <div class="classes__grid">
+            <article class="class-card reveal">
+              <div class="class-card__num">01</div>
+              <h3>Fuerza</h3>
+              <p>
+                Gana fuerza y seguridad con técnica guiada y cargas adaptadas a
+                ti.
+              </p>
+              <span class="class-card__tag">Todos los niveles</span>
+            </article>
+            <article class="class-card reveal">
+              <div class="class-card__num">02</div>
+              <h3>Movilidad</h3>
+              <p>
+                Articulaciones sanas, mejor postura y menos dolores del día a
+                día.
+              </p>
+              <span class="class-card__tag">Ideal +46 años</span>
+            </article>
+            <article class="class-card reveal">
+              <div class="class-card__num">03</div>
+              <h3>Pilates</h3>
+              <p>Core, control y respiración para conectar cuerpo y mente.</p>
+              <span class="class-card__tag">Bienestar</span>
+            </article>
+            <article class="class-card reveal">
+              <div class="class-card__num">04</div>
+              <h3>Funcional</h3>
+              <p>Entrenamientos dinámicos que te preparan para la vida real.</p>
+              <span class="class-card__tag">Energía</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALCULADORA -->
+      <section class="section calc" id="calculadora">
+        <div class="container">
+          <p class="eyebrow reveal">Herramienta gratuita</p>
+          <h2 class="title reveal">Calcula tu <em>peso ideal</em></h2>
+          <p class="lead reveal">
+            Descubre tu rango de peso saludable, tu IMC, las calorías que
+            necesitas y el agua que deberías beber cada día.
+          </p>
+
+          <div class="calc__wrap reveal">
+            <form class="calc__form" id="calcForm" novalidate>
+              <div class="field">
+                <label for="age"
+                  >Edad <output id="ageOut">30</output> años</label
+                >
+                <input type="range" id="age" min="16" max="80" value="30" />
+              </div>
+              <div class="field">
+                <label for="height"
+                  >Altura <output id="heightOut">165</output> cm</label
+                >
+                <input
+                  type="range"
+                  id="height"
+                  min="140"
+                  max="200"
+                  value="165"
+                />
+              </div>
+              <div class="field">
+                <label for="weight"
+                  >Peso actual <output id="weightOut">62</output> kg</label
+                >
+                <input type="range" id="weight" min="35" max="150" value="62" />
+              </div>
+              <div class="field">
+                <label>Nivel de actividad</label>
+                <div class="chips" id="activity">
+                  <button type="button" class="chip" data-value="1.2">
+                    Sedentaria
+                  </button>
+                  <button
+                    type="button"
+                    class="chip is-active"
+                    data-value="1.375"
+                  >
+                    Ligera
+                  </button>
+                  <button type="button" class="chip" data-value="1.55">
+                    Moderada
+                  </button>
+                  <button type="button" class="chip" data-value="1.725">
+                    Intensa
+                  </button>
+                </div>
+              </div>
+              <div class="field">
+                <label>Tu objetivo</label>
+                <div class="chips" id="goal">
+                  <button type="button" class="chip" data-value="-0.15">
+                    Perder grasa
+                  </button>
+                  <button type="button" class="chip is-active" data-value="0">
+                    Mantenerme
+                  </button>
+                  <button type="button" class="chip" data-value="0.1">
+                    Ganar fuerza
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div class="calc__results">
+              <div class="result result--main">
+                <span class="result__label">Tu peso ideal aproximado</span>
+                <span class="result__big"
+                  ><span id="idealWeight">57</span><small> kg</small></span
+                >
+                <span class="result__range"
+                  >Rango saludable:
+                  <strong id="healthyRange">50 – 68 kg</strong></span
+                >
+              </div>
+
+              <div class="result result--bmi">
+                <div class="bmi__head">
+                  <span class="result__label">Tu IMC</span>
+                  <span class="bmi__value" id="bmiValue">22.8</span>
+                </div>
+                <div class="bmi__bar">
+                  <span class="bmi__seg bmi__seg--low"></span>
+                  <span class="bmi__seg bmi__seg--ok"></span>
+                  <span class="bmi__seg bmi__seg--over"></span>
+                  <span class="bmi__seg bmi__seg--high"></span>
+                  <span class="bmi__marker" id="bmiMarker"></span>
+                </div>
+                <div class="bmi__legend">
+                  <span>Bajo</span><span>Saludable</span><span>Sobrepeso</span
+                  ><span>Alto</span>
+                </div>
+                <p class="bmi__msg" id="bmiMsg"></p>
+              </div>
+
+              <div class="result-row">
+                <div class="result result--mini">
+                  <span class="result__icon">🔥</span>
+                  <span class="result__label">Calorías / día</span>
+                  <span class="result__mid" id="kcal">1.950</span>
+                </div>
+                <div class="result result--mini">
+                  <span class="result__icon">💧</span>
+                  <span class="result__label">Agua / día</span>
+                  <span class="result__mid" id="water">2,2 L</span>
+                </div>
+                <div class="result result--mini">
+                  <span class="result__icon">🥚</span>
+                  <span class="result__label">Proteína / día</span>
+                  <span class="result__mid" id="protein">99 g</span>
+                </div>
+              </div>
+              <p class="calc__note">
+                Valores orientativos basados en fórmulas generales (Devine,
+                Robinson, Miller y Mifflin-St Jeor). Cada cuerpo es único: en
+                Esencia te hacemos una valoración personalizada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARA QUIÉN -->
+      <section class="section who">
+        <div class="container">
+          <p class="eyebrow reveal">Para ti</p>
+          <h2 class="title reveal">Sea cual sea tu <em>momento</em></h2>
+          <div class="who__grid">
+            <div class="who-card reveal">
+              <span class="who-card__age">18–30</span>
+              <h3>Empieza con confianza</h3>
+              <p>
+                Iniciación, flexibilidad y comunidad. Sala y clases colectivas
+                para descubrir lo que te gusta.
+              </p>
+            </div>
+            <div class="who-card reveal">
+              <span class="who-card__age">31–45</span>
+              <h3>Entrena a tu ritmo</h3>
+              <p>
+                Horarios amplios y reserva digital para que el gimnasio encaje
+                en tu día a día.
+              </p>
+            </div>
+            <div class="who-card reveal">
+              <span class="who-card__age">46+</span>
+              <h3>Fuerza y salud</h3>
+              <p>
+                Actividades adaptadas para ganar fuerza, mejorar la movilidad y
+                cuidar tu salud.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TARIFAS -->
+      <section class="section pricing" id="tarifas">
+        <div class="container">
+          <p class="eyebrow eyebrow--light reveal">
+            Tarifas claras, sin letra pequeña
+          </p>
+          <h2 class="title title--light reveal">Elige tu <em>plan</em></h2>
+          <div class="pricing__grid">
+            <article class="price-card reveal">
+              <h3>Básica</h3>
+              <div class="price-card__price">
+                <span data-count="35">0</span><small>€/mes</small>
+              </div>
+              <ul>
+                <li>Sala de musculación y cardio</li>
+                <li>Programa de bienvenida</li>
+                <li>Vestuarios y duchas</li>
+              </ul>
+              <a href="#contacto" class="btn btn--ghost-light">Quiero esta</a>
+            </article>
+            <article class="price-card price-card--featured reveal">
+              <span class="price-card__badge">La favorita</span>
+              <h3>Completa</h3>
+              <div class="price-card__price">
+                <span data-count="49">0</span><small>€/mes</small>
+              </div>
+              <ul>
+                <li>Todo lo de la Básica</li>
+                <li>Clases dirigidas ilimitadas</li>
+                <li>Reserva digital de clases</li>
+              </ul>
+              <a href="#contacto" class="btn btn--primary">Quiero esta</a>
+            </article>
+            <article class="price-card reveal">
+              <h3>Premium</h3>
+              <div class="price-card__price">
+                <span data-count="69">0</span><small>€/mes</small>
+              </div>
+              <ul>
+                <li>Todo lo de la Completa</li>
+                <li>Seguimiento mensual personalizado</li>
+                <li>Revisión de tus progresos</li>
+              </ul>
+              <a href="#contacto" class="btn btn--ghost-light">Quiero esta</a>
+            </article>
+          </div>
+          <div class="schedule reveal">
+            <div><span>Lunes a viernes</span><strong>7:00 – 22:00</strong></div>
+            <div><span>Sábados</span><strong>9:00 – 14:00</strong></div>
+            <div><span>Ubicación</span><strong>Arganzuela, Madrid</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MISIÓN / VISIÓN / VALORES -->
+      <section class="section culture">
+        <div class="container">
+          <p class="eyebrow reveal">Nuestra esencia</p>
+          <h2 class="title reveal">Lo que nos <em>mueve</em></h2>
+          <div class="tabs reveal">
+            <div class="tabs__nav" role="tablist">
+              <button class="tabs__btn is-active" data-tab="mision" role="tab">
+                Misión
+              </button>
+              <button class="tabs__btn" data-tab="vision" role="tab">
+                Visión
+              </button>
+              <button class="tabs__btn" data-tab="valores" role="tab">
+                Valores
+              </button>
+              <span class="tabs__indicator" id="tabIndicator"></span>
+            </div>
+            <div class="tabs__panel is-active" id="mision">
+              <p class="quote">
+                “Ofrecer a las mujeres un espacio cómodo, seguro y de confianza
+                donde entrenar, mejorar su condición física y cuidar su
+                bienestar físico y mental, sin importar su edad, experiencia o
+                condición física.”
+              </p>
+            </div>
+            <div class="tabs__panel" id="vision">
+              <p class="quote">
+                “Convertirnos en uno de los gimnasios femeninos de referencia en
+                Madrid y, a largo plazo, abrir nuevos centros manteniendo
+                siempre el trato cercano y nuestra filosofía.”
+              </p>
+            </div>
+            <div class="tabs__panel" id="valores">
+              <div class="values">
+                <div class="value">
+                  <strong>Respeto</strong
+                  ><span>Ninguna mujer se siente juzgada.</span>
+                </div>
+                <div class="value">
+                  <strong>Inclusión</strong
+                  ><span>Actividades para todas las edades.</span>
+                </div>
+                <div class="value">
+                  <strong>Confianza</strong
+                  ><span>Comodidad y seguridad siempre.</span>
+                </div>
+                <div class="value">
+                  <strong>Bienestar</strong
+                  ><span>Hábitos saludables y seguros.</span>
+                </div>
+                <div class="value">
+                  <strong>Compañerismo</strong
+                  ><span>Nos apoyamos entre socias.</span>
+                </div>
+                <div class="value">
+                  <strong>Transparencia</strong
+                  ><span>Tarifas y condiciones claras.</span>
+                </div>
+                <div class="value">
+                  <strong>Sostenibilidad</strong
+                  ><span>Consumo responsable de agua y energía.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EQUIPO -->
+      <section class="section team" id="equipo">
+        <div class="container">
+          <p class="eyebrow reveal">Las promotoras</p>
+          <h2 class="title reveal">El <em>equipo</em> detrás de Esencia</h2>
+          <div class="team__grid">
+            <article class="member reveal">
+              <div class="member__avatar">M</div>
+              <h3>Maylin Anahi Pacheco</h3>
+              <span class="member__role">Dirección general</span>
+              <p>Planificación, decisiones y coordinación del equipo.</p>
+            </article>
+            <article class="member reveal">
+              <div class="member__avatar">B</div>
+              <h3>Buenaventura Pichardo</h3>
+              <span class="member__role">Marketing</span>
+              <p>Marca, campañas, redes sociales y captación de clientas.</p>
+            </article>
+            <article class="member reveal">
+              <div class="member__avatar">A</div>
+              <h3>Andrea Alexandra</h3>
+              <span class="member__role">Finanzas</span>
+              <p>Presupuestos, ingresos, gastos y financiación.</p>
+            </article>
+            <article class="member reveal">
+              <div class="member__avatar">T</div>
+              <h3>Tecla Victoria</h3>
+              <span class="member__role">Operaciones</span>
+              <p>Horarios, proveedores y atención al cliente.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- INVERSIÓN -->
+      <section class="section invest">
+        <div class="container invest__grid">
+          <div>
+            <p class="eyebrow reveal">El proyecto en cifras</p>
+            <h2 class="title reveal">Inversión inicial <em>estimada</em></h2>
+            <div class="invest__total reveal">
+              <span data-count="180000" data-format="es">0</span> €
+            </div>
+            <p class="reveal">
+              Cómo repartimos la inversión para abrir un gimnasio completo,
+              cómodo y de calidad en Arganzuela.
+            </p>
+          </div>
+          <div class="bars" id="bars">
+            <div class="bar reveal" data-value="36.1">
+              <span>Máquinas</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+              <em>65.000 €</em>
+            </div>
+            <div class="bar reveal" data-value="25">
+              <span>Reformas</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+              <em>45.000 €</em>
+            </div>
+            <div class="bar reveal" data-value="19.4">
+              <span>Reserva inicial</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+              <em>35.000 €</em>
+            </div>
+            <div class="bar reveal" data-value="6.7">
+              <span>Alquiler y fianza</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+              <em>12.000 €</em>
+            </div>
+            <div class="bar reveal" data-value="4.4">
+              <span>Mobiliario e informática</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+              <em>8.000 €</em>
+            </div>
+            <div class="bar reveal" data-value="3.9">
+              <span>Licencias y trámites</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+              <em>7.000 €</em>
+            </div>
+            <div class="bar reveal" data-value="2.8">
+              <span>Publicidad</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+              <em>5.000 €</em>
+            </div>
+            <div class="bar reveal" data-value="1.7">
+              <span>Material deportivo</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+              <em>3.000 €</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="section contact" id="contacto">
+        <div class="container contact__grid">
+          <div>
+            <p class="eyebrow eyebrow--light reveal">
+              Jornada de puertas abiertas
+            </p>
+            <h2 class="title title--light reveal">
+              Tu primera clase es <em>gratis</em>
+            </h2>
+            <p class="reveal contact__text">
+              Ven a conocer las instalaciones, prueba una clase y descubre por
+              qué Esencia es diferente. Promociones especiales para las primeras
+              socias.
+            </p>
+            <div class="socials reveal">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="TikTok">TikTok</a>
+              <a href="#" aria-label="Google">Google</a>
+            </div>
+          </div>
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="input">
+              <input type="text" id="name" placeholder=" " required />
+              <label for="name">Tu nombre</label>
+            </div>
+            <div class="input">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">Tu email</label>
+            </div>
+            <div class="input">
+              <select id="interest" required>
+                <option value="" disabled selected hidden></option>
+                <option>Clase de fuerza</option>
+                <option>Clase de pilates</option>
+                <option>Clase de movilidad</option>
+                <option>Entrenamiento funcional</option>
+                <option>Solo quiero conocer el gimnasio</option>
+              </select>
+              <label for="interest">¿Qué te apetece probar?</label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full magnetic">
+              Reservar mi clase gratis
+            </button>
+            <p class="form-msg" id="formMsg"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">ESENCIA</div>
+      <p>Tu espacio. Tu fuerza. Tu bienestar.</p>
+      <p class="footer__small">
+        Esencia Women Fitness · Arganzuela, Madrid · Proyecto de Técnico
+        Superior en Marketing y Publicidad · Curso 2026-2027
+      </p>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
